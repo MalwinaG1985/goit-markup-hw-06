@@ -167,6 +167,19 @@ a {
   color: var(--blue);
 }
 
+.icon-mail:hover,
+.icon-mail:focus{
+  color: var(--blue);
+  --color2:var(--blue)
+  --color1:var(--blue)
+}
+
+.icon-tel:hover,{
+ color: var(--blue);
+ --color2:var
+}
+
+
 .link-tel {
   color: var(--silver);
 }
