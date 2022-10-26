@@ -168,17 +168,14 @@ a {
 }
 
 .icon-mail:hover,
-.icon-mail:focus{
-  color: var(--blue);
-  --color2:var(--blue)
-  --color1:var(--blue)
+.icon-mail:focus {
+  --color2: var(--blue);
 }
 
-.icon-tel:hover,{
- color: var(--blue);
- --color2:var
+.icon-tel:hover,
+.icon-tel:focus {
+  --color1: var(--blue);
 }
-
 
 .link-tel {
   color: var(--silver);
@@ -198,6 +195,10 @@ a {
 .wrapper {
   background-color: var(--background-grey);
   margin-top: 37px;
+  background-image: url(./images/Img\(10\)\(1\).jpg);
+  object-fit: cover;
+  box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
+    inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
 }
 
 h1 {
@@ -274,6 +275,7 @@ h1 {
   height: 38px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button2 {
@@ -281,6 +283,7 @@ h1 {
   height: 38px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button3 {
@@ -288,6 +291,7 @@ h1 {
   height: 38px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .button4 {
@@ -295,6 +299,7 @@ h1 {
   height: 38px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .button5 {
@@ -302,6 +307,7 @@ h1 {
   height: 38px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .section {
@@ -338,6 +344,14 @@ h1 {
   margin: 0;
   padding: 0;
   gap: 10px;
+}
+.lorem-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-white);
+  padding-top: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
 }
 
 h4 {
@@ -402,6 +416,18 @@ h2 {
   justify-content: space-around;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.all-social-icon {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-icon {
+  cursor: pointer;
+}
 
 .txt-1 {
   padding-top: 30px;
@@ -438,6 +464,13 @@ h2 {
 
 img {
   display: block;
+}
+.section-clients {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-clients-header {
 }
 
 .footer-down {
