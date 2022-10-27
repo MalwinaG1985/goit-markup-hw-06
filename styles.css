@@ -167,7 +167,7 @@ a {
   color: var(--blue);
 }
 
-.icon-mail{
+.icon-mail {
   margin-right: 10px;
 }
 
@@ -176,7 +176,7 @@ a {
   --color2: var(--blue);
 }
 
-.icon-tel{
+.icon-tel {
   margin-right: 10px;
 }
 .icon-tel:hover,
@@ -472,12 +472,72 @@ h2 {
 img {
   display: block;
 }
-.section-clients {
+.section-icon {
+  padding-top: 94px;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section-clients {
+  padding-bottom: 94px;
+}
+.clients-icon {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .section-clients-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.icon-clients {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.icon-clients:hover {
+  --color2: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.all-social-icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  align-items: center;
+  margin: 0;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding-top: 12px;
+}
+
+.social-icon:hover {
+  --color2: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
 }
 
 .footer-down {
@@ -547,12 +607,16 @@ img {
 }
 
 .footer-icon-all {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   margin: 0;
   padding-top: 72px;
   padding-left: 70px;
-  display: inline-flex;
+}
+
+.footer-all {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-icon-header {
@@ -576,6 +640,7 @@ img {
   gap: 10px;
   --color2: var(--white);
   position: relative;
+  margin-top: 20px;
 }
 
 .footer-icons {
@@ -583,7 +648,7 @@ img {
   padding-top: 12px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -593,6 +658,6 @@ img {
 .footer-icons:hover {
   background-color: var(--blue);
 }
-.icon{
+.icon {
   text-align: center;
 }
