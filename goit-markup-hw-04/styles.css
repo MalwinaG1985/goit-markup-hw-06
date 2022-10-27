@@ -167,7 +167,7 @@ a {
   color: var(--blue);
 }
 
-.icon-mail{
+.icon-mail {
   margin-right: 10px;
 }
 
@@ -176,7 +176,7 @@ a {
   --color2: var(--blue);
 }
 
-.icon-tel{
+.icon-tel {
   margin-right: 10px;
 }
 .icon-tel:hover,
@@ -631,7 +631,7 @@ img {
   padding-top: 12px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -641,6 +641,6 @@ img {
 .footer-icons:hover {
   background-color: var(--blue);
 }
-.icon{
+.icon {
   text-align: center;
 }
