@@ -199,7 +199,7 @@ a {
   object-fit: cover;
   box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
     inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
-  width:1200px;
+  width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,9 +274,9 @@ h1 {
   width: 100%;
   margin: 0 auto;
 }
-.link2:hover{
+.link2:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .button1 {
@@ -462,13 +462,13 @@ h2 {
   margin-bottom: 30px;
   margin-left: 0;
   margin-right: 0;
- 
-   cursor: pointer; 
+
+  cursor: pointer;
 }
 
-.item:hover{
+.item:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .border-down {
