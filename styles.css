@@ -38,6 +38,13 @@ body {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
+  color: var(--second-black);
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -45,46 +52,9 @@ ul {
   display: flex;
 }
 
-.logo1 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+.logo-color {
   color: var(--blue);
 }
-
-.logo2 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--second-black);
-}
-
-.logo3 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--blue);
-}
-
-.logo4 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--second-black);
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -137,25 +107,15 @@ a {
 }
 
 .link-mt:hover,
+.link-mt:hover > svg,
+.link-mt:focus > svg,
 .link-mt:focus {
   color: var(--blue);
-}
-
-.icon-mail {
-  margin-right: 10px;
-}
-
-.icon-mail:hover,
-.icon-mail:focus {
   --color2: var(--blue);
-}
-
-.icon-tel {
-  margin-right: 10px;
-}
-.icon-tel:hover,
-.icon-tel:focus {
   --color1: var(--blue);
+}
+.icon-mt {
+  margin-right: 10px;
 }
 
 .main-tittle {
