@@ -69,8 +69,8 @@
           <div class="container">
             <ul class="main-tittle">
               <li><h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNEZU</h1></li>
-              <li><button class="dokument-button" type="button" >Zamów usługe</button>
-              <!-- <div class="backdrop is-hidden" data-modal><div class="modal"><button class="modal-btn" data-modal-close> <svg> <use href="./images/icons.svg/Form.svg"></use></svg> </button></div></div>  </li> -->
+              <li><button class="dokument-button" type="button" data-modal-open="" >Zamów usługe</button>
+             </li>
             </ul>
           </div>
         </div>
@@ -493,9 +493,13 @@
         </div>
       </footer>
     </div>
-    <div class="backdrop " data-modal="">
+    <div class="backdrop is-hidden" data-modal="">
       <div class="modal">
-        <button  class="btn-show is-hidden" type="button" data-modal-close=""><svg class="btn-close" width="11px" height="11px"><use href="./images/icons.svg/Form.svg"></use></svg></button>
+        <button class="btn-show" type="button" data-modal-close="">
+          <svg class="btn-close" width="11px" height="11px">
+            <use href="./images/icons.svg/close.svg"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
