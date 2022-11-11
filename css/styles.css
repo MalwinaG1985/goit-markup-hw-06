@@ -761,6 +761,9 @@ img {
   transition-property: scale;
   transition-duration: 2s;
   transition-timing-function: ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal {
@@ -774,6 +777,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .close-btn {
@@ -800,4 +804,177 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: var(--black);
+}
+
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  position: relative;
+  display: block;
+  color: var(--silver);
+  width: 448px;
+  height: 58px;
+  margin-bottom: 10px;
+}
+.modal-icons {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  cursor: text;
+  transition: color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+  color: var(--black);
+}
+.modal-input {
+  width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 40px;
+}
+
+.modal-input:focus {
+  border-color: var(--blue);
+  outline: 0;
+}
+
+.modal-label:has(.modal-input:focus).modal-icon {
+  color: var(--blue);
+}
+
+.modal-comment {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.modal-comment::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-t {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 146%;
+  letter-spacing: 0.03em;
+  color: var(--silver);
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.modal-text {
+  color: var(--blue);
+}
+
+.bird {
+  position: relative;
+  color: var(--white);
+  background-color: var(--white);
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  transition: border 0.05s, color 0.05s, bacground-color 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+.modal-checkbox {
+  visibility: hidden;
+}
+
+.modal-checkbox:checked {
+  outline: 0;
+  color: green;
+}
+.modal-checkbox:checked + span svg {
+  background-color: var(--blue);
+  border: 0;
+}
+
+.modal-regul {
+  margin-top: 20px;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-button-s {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 4px;
+  border: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.875em;
+  cursor: pointer;
+  margin-top: 30px;
+  padding-right: 10px 42px;
+  width: 200px;
+  height: 50px;
+}
+
+.news {
+  display: flex;
+  padding-left: 78px;
+}
+
+.news-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 72px;
+  margin-top: 0;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.input-news {
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  padding: 15px;
+  color: var(--white);
+}
+
+.btn-down {
+  margin-left: 12px;
+  margin-top: 108px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon-send > svg {
+  padding-left: 24px;
 }
