@@ -775,7 +775,6 @@ img {
   transition-duration: 0.5s;
   transition-timing-function: ease-in cubic-bezier(0.71, 1.51, 0.4, 2);
   transition-delay: 0s;
-  /* transition-timing-function: ease; */
 }
 
 .close-btn {
@@ -786,41 +785,37 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
-  margin-left: 93%;
   right: 8px;
   top: 8px;
 }
 
-.btn-close {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.button-submit {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .is-hidden {
-  /* visibility: hidden; */
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transform: translateX(-50%), translateY(-50%);
+  transform: scale(0);
+  transition-duration: 0.5s;
 }
 
 .is-hidden .modal {
   transform: scale(0);
   transition-property: transform;
   transition-duration: 0.2s;
-  transition-timing-function: ease-out;
   transition-delay: 0s;
+  transition-timing-function: ease-out;
+  transform: translateX(-50%), translateY(-50%);
 }
 
 .is-hidden .backdrop {
-  /* visibility: hidden; */
   transition-delay: 0.2s;
-  transition-timing-function: ease-out;
-  transition-property: transform;
-  transition-duration: 2s;
+  visibility: hidden;
 }
 
 .modal-header {
@@ -938,12 +933,6 @@ img {
   margin-top: 20px;
 }
 
-.button-submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .modal-button-s {
   background-color: var(--blue);
   color: var(--white);
@@ -985,6 +974,7 @@ img {
   width: 358px;
   padding: 15px;
   color: var(--white);
+  outline: 0;
 }
 
 .btn-down {
