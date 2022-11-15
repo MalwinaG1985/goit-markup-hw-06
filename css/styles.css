@@ -851,7 +851,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
   z-index: 5;
-  color: var(--silver);
+  --blue: currentColor;
 }
 
 .modal-input {
@@ -872,7 +872,11 @@ img {
   outline: 0;
 }
 
-.modal-label:has(.modal-input:focus) .modal-icons {
+/* .modal-label:has(modal-icons:focus){
+  color: var(--blue);
+}  */
+
+.modal-label:has(input:focus) {
   color: var(--blue);
 }
 
