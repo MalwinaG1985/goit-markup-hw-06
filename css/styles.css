@@ -181,7 +181,7 @@ h1 {
   text-align: center;
 }
 
-.dokument-button {
+.news__dokument-button {
   background-color: var(--blue);
   color: var(--white);
   border: none;
@@ -789,6 +789,10 @@ img {
   top: 8px;
 }
 
+.close-btn:focus {
+  border-color: var(--blue);
+}
+
 .button-submit {
   display: flex;
   justify-content: center;
@@ -800,14 +804,15 @@ img {
   opacity: 0;
   pointer-events: none;
   transform: translateX(-50%), translateY(-50%);
-  transform: scale(0);
   transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 0;
 }
 
 .is-hidden .modal {
   transform: scale(0);
   transition-property: transform;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
   transition-delay: 0s;
   transition-timing-function: ease-out;
   transform: translateX(-50%), translateY(-50%);
@@ -865,6 +870,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 40px;
   outline: 0;
+  cursor: pointer;
 }
 
 .modal-input:focus {
@@ -872,12 +878,8 @@ img {
   outline: 0;
 }
 
-/* .modal-label:has(modal-icons:focus){
-  color: var(--blue);
-}  */
-
 .modal-label:has(input:focus) {
-  color: var(--blue);
+  fill: var(--blue);
 }
 
 .modal-comment {
@@ -959,7 +961,7 @@ img {
   padding-left: 78px;
 }
 
-.news-title {
+.news__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -971,7 +973,7 @@ img {
   margin-bottom: 20px;
 }
 
-.input-news {
+.news__input {
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -981,7 +983,7 @@ img {
   outline: 0;
 }
 
-.btn-down {
+.news__btn-down {
   margin-left: 12px;
   margin-top: 108px;
   display: flex;
@@ -991,6 +993,6 @@ img {
   gap: 24px;
 }
 
-.icon-send > svg {
+.news__icon-send > svg {
   padding-left: 24px;
 }
