@@ -877,8 +877,8 @@ img {
   outline: 0;
 }
 
-.modal-label:has(input:focus) {
-  stroke: var(--blue);
+.modal-label:has(input:focus) svg {
+  fill: var(--blue);
 }
 
 .modal-comment {
