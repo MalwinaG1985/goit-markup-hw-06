@@ -850,13 +850,13 @@ img {
   position: absolute;
   left: 15px;
   top: 30px;
-  cursor: text;
   transition-property: color;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
   z-index: 5;
-  --blue: currentColor;
+  fill: var(--silver);
+  cursor: text;
 }
 
 .modal-input {
@@ -870,7 +870,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 40px;
   outline: 0;
-  cursor: pointer;
 }
 
 .modal-input:focus {
@@ -879,7 +878,7 @@ img {
 }
 
 .modal-label:has(input:focus) {
-  fill: var(--blue);
+  stroke: var(--blue);
 }
 
 .modal-comment {
